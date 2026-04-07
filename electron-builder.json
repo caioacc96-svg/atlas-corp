@@ -1,0 +1,30 @@
+{
+  "appId": "com.atlascorp.desktop",
+  "productName": "Atlas Corp",
+  "directories": {
+    "output": "release"
+  },
+  "files": [
+    "dist/**/*",
+    "dist-electron/**/*",
+    "dist-backend/**/*",
+    "package.json"
+  ],
+  "asarUnpack": [
+    "dist-backend/**/*"
+  ],
+  "win": {
+    "target": [
+      "nsis"
+    ],
+    "artifactName": "Atlas-Corp-${version}-Setup.${ext}",
+    "signAndEditExecutable": false
+  },
+  "nsis": {
+    "oneClick": false,
+    "allowToChangeInstallationDirectory": true,
+    "createDesktopShortcut": true,
+    "createStartMenuShortcut": true
+  },
+  "forceCodeSigning": false
+}

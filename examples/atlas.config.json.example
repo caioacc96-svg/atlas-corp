@@ -1,0 +1,5 @@
+{
+  "openaiApiKey": "COLE_SUA_API_KEY_AQUI",
+  "model": "gpt-5.4",
+  "baseUrl": "https://api.openai.com/v1"
+}
